@@ -1,0 +1,502 @@
+<!-- God, please give me wisdom, courage, and favor. Show me the right opportunity and help me take the right step
+----------trust God, prepare carefully, and act when an opportunity appears------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brianna starleen's portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"> 
+</head> 
+<body> 
+    <!-- loading page --> 
+    <!-- <div class="preloader"> 
+        <div class="illustration-animation"></div> 
+        <div class="preloader-headings"> 
+            <div class="main-text">Hi, I'm Yeswitha Pirakala</div> 
+            <div class="medium-text"> Python Full Stack Developer & UI/UX Designer</div> 
+            <div class="text-container"> 
+                <div class="small-text">Preparing my portfolio...</div> 
+                <div class="hidden-text">✓ Ready!</div> 
+            </div> 
+        </div> 
+        <div class="loader-animation"></div> 
+    </div>  --> 
+    <!-- landing page --> 
+    <div class="landing-page"> 
+        <nav class="navigation"> 
+            <div class="logo">BS</div> 
+            <ul> 
+                <li><a href="#about">About</a></li> 
+                <li><a href="#skill">Skill</a></li> 
+                <li><a href="#Project">Project</a></li> 
+                <li><a href="#certifications">Certifications</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+            </ul> 
+            <div class="download-resume">Download Resume</div> 
+        </nav> 
+        <!-- Home --> 
+         <section class="home"> 
+            <div class="content"> 
+                <div class="main-txt">Hi, I'm <br> 
+                       <span>Yeswitha </span>Pirakala</div> 
+                <div class="sub-txt">Python Full Stack Developer & UI/UX Designer</div> 
+                <div class="paragraph">Software developer with a strong foundation in coding and problem-solving, ready to deliver quality work in a collaborative team environment and expand my technical expertise.</div> 
+             
+                <div class="buttons"> 
+                    <div class="viewmywork">View My Work</div> 
+                    <div class="contactme">Contact Me</div> 
+                </div> 
+ 
+                <div class="cards"> 
+                    <div class="card1"> 
+                        <span>8.0</span> 
+                        CGPA 
+                    </div> 
+                    <div class="card2"> 
+                        <span>4</span> 
+                        Projects 
+                    </div> 
+                    <div class="card3"> 
+                        <span>3</span> 
+                        Certifications 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="profile-animation"> 
+                <div class="img-animation"> 
+                    <img src="./images/img.png" alt="Portrait of Yeswitha Pirakala" class="image"> 
+                </div> 
+                <div class="floating-icons"> 
+                    <div class="code">&lt;/&gt;</div> 
+                    <div class="ui">UI</div> 
+                    <div class="python"> Py</div> 
+                    <div class="backend">{ }</div> 
+                </div> 
+            </div> 
+         </section> 
+    </div>  
+</body> 
+</html change the calss names that are good
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------- universal tags ----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap'); 
+*, :before, :after { 
+    box-sizing: border-box; 
+} 
+html,body{ 
+    margin:0; 
+    padding: 0 1rem; 
+} 
+body { 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+} 
+:root { 
+    --bg: #fff; 
+    --bg-sub-txttle: #f8f9fa; 
+    --surface: #fff; 
+    --surface-2: #f1f3f4; 
+    --border: #e8eaed; 
+    --text-1: #202124; 
+    --text-2: #5f6368; 
+    --text-3: #9aa0a6; 
+    --blue: #1a73e8; 
+    --blue-tint: #e8f0fe; 
+    --purple: #a855f7; 
+    --purple-tint: #f5f0ff; 
+    --green: #34a853; 
+    --green-tint: #e6f4ea; 
+    --red: #ea4335; 
+    --red-tint: #fce8e6; 
+    --radius-card: 24px; 
+    --shadow-card: 0 2px 12px #0000000f, 0 1px 3px #0000000a; 
+    --shadow-lift: 0 12px 32px #0000001a, 0 2px 8px #0000000f; 
+    --transition: .2s cubic-bezier(.4, 0, .2, 1); 
+} 
+ 
+/* -------------------- loading page -----------------------*/ 
+ 
+ 
+/* illustration-animation */ 
+.preloader{ 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items:center; 
+    justify-content: center; 
+    text-align: center; 
+    position:fixed; 
+    z-index: 2; 
+    position: fixed;    
+    inset: 0;             /* top/right/bottom/left: 0 */ 
+    background: var(--bg); 
+    animation: pageslideup 1s ease 5s forwards; 
+} 
+@keyframes pageslideup{ 
+    from{transform: translateY(0);} 
+    to{transform: translateY(-100%);} 
+} 
+/* preloader-headings */ 
+.preloader-headings{ 
+    animation: slideup 1s ease forwards; 
+} 
+@keyframes slideup{ 
+    from{ transform: translateY(10px); opacity: 0; } 
+    to  { transform: translateY(0);    opacity: 1; } 
+} 
+.main-text{ 
+    font-family: Manrope, sans-serif; 
+    font-weight: 900; 
+    font-size:2rem; 
+    color: var(--text-1); 
+    letter-spacing: -0.02em; 
+    line-height: 1.2; 
+    margin-bottom: 10px; 
+} 
+.medium-text{ 
+    font-family: Manrope, sans-serif; 
+    font-weight:500; 
+    font-size: 1rem; 
+    color:var(--text-2); 
+    margin-bottom: 8px; 
+} 
+.text-container{ 
+    display: inline-block; 
+    position: relative; 
+} 
+.small-text, 
+.hidden-text { 
+    font-family: Inter, sans-serif; 
+    font-size: 0.85rem; 
+    color: rgb(26, 115, 232); 
+    font-weight: 500; 
+} 
+.small-text{ 
+    animation: fadeout 0s ease 3s forwards; 
+} 
+.hidden-text{ 
+    top:0; 
+    width: 100%; 
+    position: absolute; 
+    opacity: 0; 
+    animation: fadein 0s ease 3s forwards; 
+    text-align: center; 
+} 
+@keyframes fadeout { 
+    to{ 
+        opacity: 0; 
+     
+    } 
+     
+} 
+@keyframes fadein { 
+    to{ 
+        opacity: 1; 
+    } 
+     
+} 
+/* loader-animation */ 
+ 
+.loader-animation { 
+  width: 13rem; 
+  height: 0.3rem; 
+  background-color: #f8f9fa; 
+  margin-top: 20px; 
+  border-radius: 5px; 
+  overflow: hidden; 
+} 
+ 
+.loader-animation::after { 
+    content: ""; 
+    height: 100%; 
+    width: 0%; 
+    display: block; 
+    background: linear-gradient( 
+    to right, 
+    var(--blue), 
+    var(--purple), 
+    var(--red), 
+    var(--green)        
+  ); 
+    animation: loader 4.5s ease-in-out forwards; 
+} 
+@keyframes loader { 
+    from{ width: 0%;} 
+    to{ width: 100%;} 
+} 
+ 
+ 
+ 
+ 
+ 
+/* --------------------- Landing page ----------------------- */ 
+ 
+.landing-page{ 
+    width: min(1180px, calc(100% - 96px)); 
+    margin: 0 auto; 
+    position: relative; 
+    z-index: 1; 
+     
+} 
+ 
+/* ---------- navigation---------- */ 
+.navigation{ 
+    width: 100%; 
+    height: 5rem; 
+    display: flex; 
+    align-items:center; 
+    justify-content: space-between; 
+} 
+/* -----logo---- */ 
+.logo { 
+    width: 2.625rem; 
+    height: 2.625rem;  
+    border-radius: 0.8rem; 
+    background: linear-gradient(135deg, #1a73e8, #a855f7); 
+    display: flex; 
+    align-items: center; 
+    flex-shrink: 0; 
+    justify-content: center; 
+    font-family: Manrope, sans-serif; 
+    font-weight: 600; 
+    color: white; 
+    box-shadow: 0 2px 8px #1a73e84d; 
+} 
+/* -----nav content----- */ 
+ 
+.navigation ul{ 
+    list-style: none; 
+    display: flex; 
+    align-items: center; 
+    gap: 0.2rem;; 
+     
+} 
+.navigation a{ 
+    text-decoration: none; 
+    color: var(--text-2); 
+    font-size: 0.95rem; 
+    font-weight: 550; 
+    font-family: Manrope, sans-serif; 
+    border-radius:9999px; 
+    padding: 0.4rem 0.9rem; 
+} 
+.navigation a:hover { 
+    background-color: #f1f3f4; 
+} 
+.navigation a:active{ 
+    color: var(--blue); 
+    background-color:var(--blue-tint) ; 
+} 
+/* -----download resume */ 
+.download-resume{ 
+    background: var(--blue) ; 
+    color: #fff; 
+    font-family: Manrope, sans-serif; 
+    font-size:0.9rem; 
+    font-weight: 700; 
+    border-radius:9999px; 
+    padding: 0.5rem 0.9rem; 
+} 
+ 
+ 
+ 
+ 
+ 
+/* --------------------- home ----------------------- */ 
+/* .home{ 
+    width: min(1100px, calc(100% - 96px)); 
+    margin: 0px 48px; 
+    padding: 0px 24px; 
+} */ 
+.home { 
+    width: min(1180px, calc(100% - 96px)); 
+    margin: 0 auto; 
+    padding: 4rem 0rem; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+} 
+ 
+/* -----text----- */ 
+.main-txt{ 
+    font-family: Manrope, sans-serif; 
+    font-weight: 800; 
+    font-size : 3rem; 
+    letter-spacing:-0.03em; 
+    line-height: 1.1; 
+    margin-bottom: 0.9rem; 
+} 
+.main-txt span{ 
+    color: var(--blue); 
+} 
+.sub-txt{ 
+    font-family: Manrope, sans-serif; 
+    font-weight: 700; 
+    font-size:1.3rem; 
+    margin-bottom: 1.25rem; 
+    display: inline-block; 
+    background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 55%, var(--red) 100%); 
+    background-clip: text; 
+    color: transparent; 
+    -webkit-text-fill-color: transparent; 
+} 
+.paragraph{ 
+    font-family: Inter, sans-serif; 
+    font-size: 1.1rem; 
+    font-weight: 500; 
+    color: var(--text-2); 
+    line-height: 1.75; 
+    margin-bottom: 2.1rem; 
+    max-width: 31rem;  
+     
+} 
+ 
+.buttons{ 
+    max-width: 31rem;  
+    display: flex; 
+    gap: 1.25rem;  
+    margin-bottom: 1.9rem 
+} 
+.viewmywork{ 
+    color:white; 
+    background-color: var(--blue); 
+    border: 2px solid var(--blue); 
+    font-size: 1rem; 
+    font-weight: 700; 
+    font-family: Manrope, sans-serif; 
+    padding: 0.95rem 1.9rem; 
+    border-radius: 9999px; 
+} 
+.viewmywork:hover{ 
+    background-color: #1557b0; 
+    border: 2px solid  #1557b0; 
+    box-shadow: 0 6px 20px #1a73e859; 
+} 
+.contactme{ 
+    color:var(--blue); 
+    background-color: #fff; 
+    border: 2px solid var(--blue); 
+    font-size: 1rem; 
+    font-weight: 700; 
+    font-family: Manrope, sans-serif; 
+    padding: 0.95rem 2.3rem; 
+    border-radius: 9999px; 
+} 
+.contactme:hover{ 
+    background-color: var(--blue-tint); 
+} 
+ 
+.cards{ 
+    display: flex; 
+    flex-direction: row; 
+    gap: 0.9rem; 
+} 
+.card1 span{ 
+    
+    color:var(--blue) 
+    
+} 
+.card2 span{ 
+     
+    color:var(--purple) 
+} 
+.card3 span{ 
+     
+    color:var(--green) 
+} 
+.card1 span,.card2 span,.card3 span{ 
+    font-family: Manrope, sans-serif; 
+    font-weight: 800; 
+    font-size: 1.8rem; 
+    line-height: 1; 
+} 
+.card1,.card2,.card3{ 
+    font-family: Inter, sans-serif; 
+    font-size: 0.9rem; 
+    color: var(--text-2); 
+    margin-top: 4px; 
+    font-weight: 500; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 1.9rem 1.5rem; 
+    border-radius: 1.1rem;  
+    border:1px solid #e4e2e2; 
+} 
+.card1{ 
+    background-color: var(--blue-tint); 
+} 
+.card2{ 
+    background-color: var(--purple-tint); 
+} 
+.card3{ 
+    background-color: var(--green-tint); 
+} 
+ 
+ 
+/* img */ 
+.img-animation img{ 
+    width: 26.5406rem; 
+    height: 33.1906rem; 
+} 
+ 
+/* icons */ 
+.floating-icons{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap:10px; 
+} 
+.floating-icons div{ 
+    font-family: Manrope, sans-serif;         
+    font-weight: 800; 
+    font-size: 1.2rem; 
+ 
+    height :46px; 
+    width: 46px; 
+    border-radius: 10px; 
+    padding:5px; 
+     
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+ 
+}  
+.code{ 
+    background: var(--blue-tint); 
+    color: var(--blue); 
+    border: 1.5px solid var(--blue); 
+    box-shadow: rgba(26, 115, 232, 0.25) 0px 4px 14px; 
+}  just change the  class names not dont change any code
+.ui{ 
+    background:rgb(245, 240, 255); 
+    color: rgb(168, 85, 247);; 
+    border: 1.5px solid var(--blue); 
+    box-shadow: rgba(168, 85, 247, 0.25) 0px 4px 14px; 
+} 
+.python{ 
+    background: rgb(252, 232, 230); 
+    color: rgb(234, 67, 53); 
+    border: 1.5px solid rgba(234, 67, 53, 0.25); 
+    box-shadow: rgba(234, 67, 53, 0.25) 0px 4px 14px; 
+} 
+.backend{ 
+    background: rgb(230, 244, 234); 
+    color: rgb(52, 168, 83); 
+    border: 1.5px solid rgba(52, 168, 83, 0.25); 
+    box-shadow: rgba(52, 168, 83, 0.25) 0px 4px 14px; 
+} 
